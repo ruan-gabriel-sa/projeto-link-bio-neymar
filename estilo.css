@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ysabeau Infant', sans-serif;
+  }
+
+.secao-banner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.secao-banner video {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+}
+
+.imgPerfil-titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.imgPerfil-titulo h1 {
+    color: #fff;
+    font-size: 54px;
+    text-shadow: 3px 6px 1px #000000;
+    position: relative;
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 5px;
+    width: 55px;
+    height: 5px;
+    border-radius: 4px;
+    background: linear-gradient(90deg, #ffdf00, #009c3b);
+}
+
+h1::after {
+    content: "";
+    background-image: url('assets/verificado.png');
+    background-position: center;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 10px;
+}
+
+.imgPerfil {
+    width: 200px;
+    height: 200px;
+    background-image: url('assets/neymar.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgPerfil::before {
+    content: "";
+    width: 215px;
+    height: 215px;
+    position: absolute;
+    background: linear-gradient(90deg, #ffdf00, #009c3b);
+    border-radius: 100%;
+    z-index: -1;;
+}
+
+/* links */
+
+.arvore-links {
+    width: 768px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.arvore-links img {
+    width: 30px;
+}
+
+.arvore-links a {
+    width: 100%;
+    gap: 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: #fff;
+    background-color: #0200006e;
+    border-radius: 15px;
+    margin: 10px 0;
+}
+
+.arvore-links a:hover {
+    background-color: #fff;
+    color: #000000;
+}
+
+.arvore-links a p {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.secao-tabela {
+    background-image: url('assets/imagem-de-fundo.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    flex-direction: column;
+    gap: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.secao-tabela h2 {
+    font-size: 74px;
+    color: #fff;
+    text-shadow: 3px 6px 1px #000000;
+  }
+
+.tabela th {
+    background-color: #000000cc;
+    color: #fff;
+    font-size: 26px;
+    text-shadow: 2px 2px 1px #000000;
+}
+
+.tabela tbody tr:nth-child(even) {
+    background-color: #000000cc;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.tabela tbody tr:nth-child(odd) {
+    background-color: #ffffffcc;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.tabela th, tr, td {
+    padding: 20px;
+}
+
+
+.tabela img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.tabela tbody td:nth-child(1) {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
